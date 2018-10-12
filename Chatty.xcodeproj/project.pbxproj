@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		C616E592A3564575FACD79A1 /* Pods_Chatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F01886506F5315D18D4649 /* Pods_Chatty.framework */; };
 		F428D8B12170101200705D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8B02170101200705D20 /* AppDelegate.swift */; };
-		F428D8B32170101200705D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8B22170101200705D20 /* ViewController.swift */; };
 		F428D8B62170101200705D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B42170101200705D20 /* Main.storyboard */; };
 		F428D8B82170101200705D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B72170101200705D20 /* Assets.xcassets */; };
 		F428D8BB2170101200705D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B92170101200705D20 /* LaunchScreen.storyboard */; };
-		F428D8E421701DEB00705D20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F428D8E321701DEB00705D20 /* SWRevealViewController.m */; };
+		F428D8E92170204100705D20 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8E82170204100705D20 /* ChatVC.swift */; };
+		F428D8EB2170205600705D20 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8EA2170205600705D20 /* ChannelVC.swift */; };
+		F428D90521711E4400705D20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F428D90421711E4400705D20 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,14 +23,15 @@
 		E6F01886506F5315D18D4649 /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F428D8AD2170101200705D20 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F428D8B02170101200705D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F428D8B22170101200705D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F428D8B52170101200705D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F428D8B72170101200705D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F428D8BA2170101200705D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F428D8BC2170101200705D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F428D8E121701DE900705D20 /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
-		F428D8E221701DEA00705D20 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		F428D8E321701DEB00705D20 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F428D8E82170204100705D20 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		F428D8EA2170205600705D20 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		F428D90221711E4200705D20 /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
+		F428D90321711E4300705D20 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F428D90421711E4400705D20 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 		F428D8A42170101200705D20 = {
 			isa = PBXGroup;
 			children = (
-				F428D8E021701DC300705D20 /* Supporting Files */,
+				F428D90121711E0B00705D20 /* Supporting Files2 */,
 				F428D8AF2170101200705D20 /* Chatty */,
 				F428D8AE2170101200705D20 /* Products */,
 				F607BC279A87CD2D3C6D12C5 /* Pods */,
@@ -74,8 +76,10 @@
 		F428D8AF2170101200705D20 /* Chatty */ = {
 			isa = PBXGroup;
 			children = (
+				F428D8E72170201A00705D20 /* Model */,
+				F428D8E62170201300705D20 /* View */,
+				F428D8E52170200200705D20 /* Controller */,
 				F428D8B02170101200705D20 /* AppDelegate.swift */,
-				F428D8B22170101200705D20 /* ViewController.swift */,
 				F428D8B42170101200705D20 /* Main.storyboard */,
 				F428D8B72170101200705D20 /* Assets.xcassets */,
 				F428D8B92170101200705D20 /* LaunchScreen.storyboard */,
@@ -84,14 +88,38 @@
 			path = Chatty;
 			sourceTree = "<group>";
 		};
-		F428D8E021701DC300705D20 /* Supporting Files */ = {
+		F428D8E52170200200705D20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F428D8E221701DEA00705D20 /* SWRevealViewController.h */,
-				F428D8E321701DEB00705D20 /* SWRevealViewController.m */,
-				F428D8E121701DE900705D20 /* Chatty-Bridging-Header.h */,
+				F428D8E82170204100705D20 /* ChatVC.swift */,
+				F428D8EA2170205600705D20 /* ChannelVC.swift */,
 			);
-			path = "Supporting Files";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F428D8E62170201300705D20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F428D8E72170201A00705D20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F428D90121711E0B00705D20 /* Supporting Files2 */ = {
+			isa = PBXGroup;
+			children = (
+				F428D90321711E4300705D20 /* SWRevealViewController.h */,
+				F428D90421711E4400705D20 /* SWRevealViewController.m */,
+				F428D90221711E4200705D20 /* Chatty-Bridging-Header.h */,
+			);
+			name = "Supporting Files2";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F607BC279A87CD2D3C6D12C5 /* Pods */ = {
@@ -222,9 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F428D8B32170101200705D20 /* ViewController.swift in Sources */,
+				F428D8EB2170205600705D20 /* ChannelVC.swift in Sources */,
+				F428D8E92170204100705D20 /* ChatVC.swift in Sources */,
 				F428D8B12170101200705D20 /* AppDelegate.swift in Sources */,
-				F428D8E421701DEB00705D20 /* SWRevealViewController.m in Sources */,
+				F428D90521711E4400705D20 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msi.chatty.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/Chatty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +432,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msi.chatty.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/Chatty-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
