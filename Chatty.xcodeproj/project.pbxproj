@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C616E592A3564575FACD79A1 /* Pods_Chatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F01886506F5315D18D4649 /* Pods_Chatty.framework */; };
 		F428D8B12170101200705D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8B02170101200705D20 /* AppDelegate.swift */; };
 		F428D8B32170101200705D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8B22170101200705D20 /* ViewController.swift */; };
 		F428D8B62170101200705D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B42170101200705D20 /* Main.storyboard */; };
 		F428D8B82170101200705D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B72170101200705D20 /* Assets.xcassets */; };
 		F428D8BB2170101200705D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F428D8B92170101200705D20 /* LaunchScreen.storyboard */; };
+		F428D8E421701DEB00705D20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F428D8E321701DEB00705D20 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3C886A4AD231AFF78CA76FE /* Pods-Chatty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatty/Pods-Chatty.release.xcconfig"; sourceTree = "<group>"; };
+		C9046BFC3695DB37D7F43800 /* Pods-Chatty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatty/Pods-Chatty.debug.xcconfig"; sourceTree = "<group>"; };
+		E6F01886506F5315D18D4649 /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F428D8AD2170101200705D20 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F428D8B02170101200705D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F428D8B22170101200705D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		F428D8B72170101200705D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F428D8BA2170101200705D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F428D8BC2170101200705D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F428D8E121701DE900705D20 /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
+		F428D8E221701DEA00705D20 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F428D8E321701DEB00705D20 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C616E592A3564575FACD79A1 /* Pods_Chatty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A463AE9D4DCC31CD75D7ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F01886506F5315D18D4649 /* Pods_Chatty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F428D8A42170101200705D20 = {
 			isa = PBXGroup;
 			children = (
+				F428D8E021701DC300705D20 /* Supporting Files */,
 				F428D8AF2170101200705D20 /* Chatty */,
 				F428D8AE2170101200705D20 /* Products */,
+				F607BC279A87CD2D3C6D12C5 /* Pods */,
+				0A463AE9D4DCC31CD75D7ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +84,25 @@
 			path = Chatty;
 			sourceTree = "<group>";
 		};
+		F428D8E021701DC300705D20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F428D8E221701DEA00705D20 /* SWRevealViewController.h */,
+				F428D8E321701DEB00705D20 /* SWRevealViewController.m */,
+				F428D8E121701DE900705D20 /* Chatty-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F607BC279A87CD2D3C6D12C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9046BFC3695DB37D7F43800 /* Pods-Chatty.debug.xcconfig */,
+				A3C886A4AD231AFF78CA76FE /* Pods-Chatty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F428D8BF2170101200705D20 /* Build configuration list for PBXNativeTarget "Chatty" */;
 			buildPhases = (
+				D5FD51BEDE7FDDF0263BDC55 /* [CP] Check Pods Manifest.lock */,
 				F428D8A92170101200705D20 /* Sources */,
 				F428D8AA2170101200705D20 /* Frameworks */,
 				F428D8AB2170101200705D20 /* Resources */,
+				A3B42608806AABC92249314F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					F428D8AC2170101200705D20 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +172,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3B42608806AABC92249314F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chatty/Pods-Chatty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StarscreamSocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatty/Pods-Chatty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FD51BEDE7FDDF0263BDC55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F428D8A92170101200705D20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +224,7 @@
 			files = (
 				F428D8B32170101200705D20 /* ViewController.swift in Sources */,
 				F428D8B12170101200705D20 /* AppDelegate.swift in Sources */,
+				F428D8E421701DEB00705D20 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +368,10 @@
 		};
 		F428D8C02170101200705D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9046BFC3695DB37D7F43800 /* Pods-Chatty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD7534S99K;
 				INFOPLIST_FILE = Chatty/Info.plist;
@@ -291,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msi.chatty.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +390,10 @@
 		};
 		F428D8C12170101200705D20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C886A4AD231AFF78CA76FE /* Pods-Chatty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD7534S99K;
 				INFOPLIST_FILE = Chatty/Info.plist;
@@ -309,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msi.chatty.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
