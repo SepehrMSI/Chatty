@@ -18,6 +18,7 @@
 		F428D8E92170204100705D20 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8E82170204100705D20 /* ChatVC.swift */; };
 		F428D8EB2170205600705D20 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428D8EA2170205600705D20 /* ChannelVC.swift */; };
 		F428D90521711E4400705D20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F428D90421711E4400705D20 /* SWRevealViewController.m */; };
+		F4599CF12173B9D0003DBC57 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4599CF02173B9D0003DBC57 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F428D90221711E4200705D20 /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
 		F428D90321711E4300705D20 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F428D90421711E4400705D20 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F4599CF02173B9D0003DBC57 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				F428D8E82170204100705D20 /* ChatVC.swift */,
 				F428D8EA2170205600705D20 /* ChannelVC.swift */,
 				F40DAC902172D48800E0A65C /* LoginVC.swift */,
+				F4599CF02173B9D0003DBC57 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				F428D8EB2170205600705D20 /* ChannelVC.swift in Sources */,
 				F428D8E92170204100705D20 /* ChatVC.swift in Sources */,
+				F4599CF12173B9D0003DBC57 /* CreateAccountVC.swift in Sources */,
 				F40DAC912172D48800E0A65C /* LoginVC.swift in Sources */,
 				F40DAC8C2171271F00E0A65C /* GradientView.swift in Sources */,
 				F428D8B12170101200705D20 /* AppDelegate.swift in Sources */,
