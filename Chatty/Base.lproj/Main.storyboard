@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -248,7 +248,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-v2-6yH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-v2-6yH" customClass="RoundedButton" customModule="Chatty" customModuleProvider="target">
                                 <rect key="frame" x="82" y="353" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.42141163349999999" green="0.61700546739999995" blue="0.78043514489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -259,6 +259,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aUV-fQ-lkc">
                                 <rect key="frame" x="141.66666666666669" y="104" width="130.66666666666669" height="40"/>
@@ -388,7 +393,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxH-Xw-Cxq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxH-Xw-Cxq" customClass="RoundedButton" customModule="Chatty" customModuleProvider="target">
                                 <rect key="frame" x="82" y="782" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.42141163349999999" green="0.61700546739999995" blue="0.78043514489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -399,6 +404,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="g29-xZ-arv" eventType="touchUpInside" id="mNY-GF-m7q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an acoount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHL-UV-JKx">
                                 <rect key="frame" x="118.66666666666667" y="84" width="176.66666666666663" height="24"/>
@@ -438,6 +451,9 @@
                                 <state key="normal" title="Choose Avatar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="g29-xZ-arv" eventType="touchUpInside" id="wj9-7s-OSL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cko-98-B1O">
                                 <rect key="frame" x="100" y="484" width="214" height="32"/>
@@ -445,6 +461,9 @@
                                 <state key="normal" title="Generate Background Color">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickBGColorPressed:" destination="g29-xZ-arv" eventType="touchUpInside" id="Ikc-KB-sYy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -472,6 +491,10 @@
                         <viewLayoutGuide key="safeArea" id="B8u-L1-IaU"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="IRI-7E-Wp5" id="ULF-H0-98h"/>
+                        <outlet property="passTxt" destination="JwR-YM-MOk" id="h2k-W8-zxS"/>
+                        <outlet property="userImg" destination="EWA-s0-uto" id="bMS-b9-R9a"/>
+                        <outlet property="usernameTxt" destination="w4M-ZB-RtP" id="gg3-YZ-pUU"/>
                         <segue destination="DPW-2L-kxR" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="uXn-5e-NLZ"/>
                     </connections>
                 </viewController>
