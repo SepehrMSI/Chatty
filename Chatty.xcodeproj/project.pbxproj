@@ -142,7 +142,6 @@
 				F40DAC8B2171271F00E0A65C /* GradientView.swift */,
 				F438102F21A4C9FE0099F4C2 /* AvatarCell.swift */,
 				F46ABB892188FFC60017C87F /* RoundedButton.swift */,
-				F4AC691F217AAF860058C653 /* AuthService.swift */,
 				F453E7BD21AB852E002A7DA5 /* CircleImage.swift */,
 			);
 			path = View;
@@ -177,6 +176,7 @@
 		F4AC691E217AAF680058C653 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F4AC691F217AAF860058C653 /* AuthService.swift */,
 				F46ABB8B218CBA350017C87F /* UserDataService.swift */,
 			);
 			path = Services;
